@@ -1,0 +1,55 @@
+.hero-section{
+    margin-top: 23px;
+    display: flex;
+;
+}
+
+   .img-container {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    position: relative;
+    top: 0vh;
+    width: 450px;
+    height: 600px;
+    margin: 15px 0;
+    padding: 15px;
+    overflow: hidden;
+  }
+  
+  .phone {
+    position: relative;
+    left: -85px;
+    transform: scale(1);
+
+  }
+  .modal{
+    animation: modal 2s ease-in-out;
+  }
+  @keyframes modal {
+    from{
+      opacity: 0;
+      transform: translateX(10vh) scale(0.5);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0vh) scale(1);
+    }
+  }
+  .modal1{
+    animation: modal 2s ease-in-out;
+  }
+  /* @keyframes modal {
+    from{
+      opacity: 0;
+      transform: translateY(-10vh) scale(0.5);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0vh) scale(1);
+    } */
+  /* } */
+  /*
+  #trigger {
+    position: absolute;
+    top: 25vh;
+  } */

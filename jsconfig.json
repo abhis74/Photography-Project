@@ -3,6 +3,8 @@
     "target": "es5",
     "module": "esnext",
     "baseUrl": "./",
+
+    // "experimentalDisableTemplateSupport":"true",
     "moduleResolution": "node",
     "paths": {
       "@/*": [
@@ -15,5 +17,8 @@
       "dom.iterable",
       "scripthost"
     ]
+  },
+  "vueCompilerOptions":{
+"experimentalDisableTemplateSupport": true,
   }
 }

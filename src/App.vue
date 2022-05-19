@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+  <router-view></router-view>
+  <!-- <couponsCard/> -->
+<!-- <Header/>
+<MainSection/>
+<HeroSection/> -->
+
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import couponsCard from "./components/coupons.vue"
+// import Header from "./components/Header.vue"
+// import MainSection from "./components/MainSection.vue"
+// import HeroSection from "./components/HeroSection.vue"
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    // Header,
+    // MainSection,
+    // HeroSection,
+    // // couponsCard
+   
+}
 }
 </script>
 
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  margin: 0px auto;
 }
 </style>
