@@ -1,10 +1,9 @@
-*{
+/* *{
     margin: 0;
     padding:0;
-}
+} */
 /* body{
-    background-color: black;
-    color: #ffff;
+    max-width: 1600px;
 } */
 .logo{
     
@@ -40,72 +39,89 @@
     background-color: red;
     /* color: red; */
     width: 23px;
-    height: 3px;
+    height: 1px;
     margin: 2px;
 }
 
 
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-  transform: translateX(96vw);
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-  transform: translateX(90vw);
-}
 
 .nav-links-box{
-    display: block;
-
-    /* justify-content: flex-end; */
+    display: none;
+    z-index: 1111111;
     position: absolute;
-    /* animation: navBar all 0.4s ease-in-out; */
- /* transform:translate(96vw) all 0.4s ease-in-out; */
-    /* transform: translateX(96vw) ; */
+    
 }
 
-/* @keyframes  navbar{
-    from{
-        
-        transform: translateX(96vw) ;
-    }
-    to{
-        display: block;
-        z-index: 11111;
-        transform: translateX(90vw);
-    } 
-} */
-/* .active{
-    display: block;
-    z-index: 11111;
-    transform: translateX(90vw);
-} */
-.nav-links{
 
+.nav-links{
+    background: black;
+    color: white;
+    margin-left: 16px;
+    height: 89vh;
+    margin-top: 0px;
+    padding: 0px;
   
     
 }
 .nav-links li{
+    padding: 45px 0px;
     list-style: none;
     cursor: pointer;
     margin: 0px 38px;
 }
 .nav-links li:hover{
-  /* color: #ffffff; */
+
+}
+
+ .nav-links li a{
+    text-decoration: none;
 }
 .sub-links{
     display: none;
 }
+.animated-box{
+    animation: slide-fade-box 0.6s ease-out forwards;
+    display: block;
+}
 .animate{
-    animation: slide-fade 0.6s ease-out ;
+    display: block;
+    animation: slide-fade 0.6s ease-out forwards;
 }
 @keyframes slide-fade {
     0%{
-      transform: translateX(96vw) scale(1);
+        opacity: 0;
+      transform: translateX(-10vw) scale(1);
     }
    100%{
-     transform: translateX(90vw) scale(1);
+       opacity: 1;
+       transform: translateX(calc(100vw - 156.74px)) scale(1);
    }
+}
+@keyframes slide-fade-box  {
+    0%{
+        transform: translateX(calc(100vw - 156.74px)) scale(1);
+    }
+   100%{
+       opacity: 0;
+       display: none;
+     transform: translateX(-10vw) scale(1);
+   }
+}
+.cross-div-one{
+    transform: rotate(45deg);
+    width: 23px;
+    height: 1px !important;
+    margin: 0px !important;
+}
+
+.cross-div-sec{
+    display: none;
+}
+.cross-div-three{
+    transform: rotate(-45deg);
+    width: 23px;
+    height: 1px !important;
+    margin: 0px !important;
+  
 }

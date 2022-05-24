@@ -7,22 +7,22 @@
       </div>
 
       <div class="navBar" @click="navBar" >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span :class="navBarblock ? 'cross-div-one':''"></span>
+            <span :class="navBarblock ? 'cross-div-sec':''"></span>
+            <span :class="navBarblock ? 'cross-div-three':''"></span>
       </div>
 
     </div>
-    <div class="nav-links-box" :class="{navBar:animate}">
+    <div class="nav-links-box" :class="navBarblock ? 'animate' : 'animated-box'">
 
       <ul class="nav-links" >
-        <li @mouseover="sublinks" > HOME
+        <li @mouseover="sublinks" ><a href="/">  HOME
+         </a> </li>
             <div class="sub-links" v-show="!sublinksShow">
               <p>Landscape</p>
               <p>Sports</p>
               <p>Night</p>
             </div>
-          </li>
           <li>About</li>
           <li>Contact</li>
         <li> <router-link to="/login">LogIn</router-link> </li>
@@ -47,7 +47,7 @@ methods: {
             this.sublinksShow=!this.sublinksShow
     },
  navBar(){
-   this.navBarblock=!this.}
+   this.navBarblock=!this.navBarblock}
 },
 
 

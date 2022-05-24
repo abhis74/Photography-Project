@@ -1,57 +1,31 @@
 <template>
   <div>
+    <div class="heading">
+      <h1>Beautiful Moment Is Everythings</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores quos ducimus at, sequi quia reiciendis. Neque illo officia tempora odio molestias nam esse incidunt voluptate quisquam. Repellendus itaque dolore laborum.</p>
+      <img class="arrow" src="../assets/arrow.png" alt="">
+    </div>
     <div class="mainImg">
-         <agile :initial-slide="3">
-        <div class="slide" v-for="mainheroImg in mainheroImgs" :key="mainheroImg.index">
-        <!-- {{mainheroImg.hero_img}} -->
-        <img :src="require(`../assets/${mainheroImg.hero_img}.webp`)"  > 
-        <p>{{mainheroImg.text}}</p>
-        </div>
-
-    </agile>
-    
+       <img :src="require(`../assets/${mainheroImgs[0].hero_img}.webp`)"  > 
     </div>
     <div class="hero-section">
-    
-      <div class="img-container modal" ref="phoneBg">
-        <img
-          ref="phone"
-          class="phone"
-          src="../assets/pexels-philip-ackermann-1666021.jpg"
-          alt="isometric phone"
-          width="600"
-        />
-      </div>
-   
-    <div class="img-container modal1">
-      <img
-        ref="phone"
-        class="phone"
-        src="../assets/212e3rr4.jpg"
-        alt="isometric phone"
-        width="600"
-      />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odit asperiores itaque impedit, hic sed quia illum optio debitis molestiae non rerum quibusdam neque eos voluptatibus esse nemo dignissimos aliquid!</p>
+      <img :src="require(`../assets/${mainheroImgs[4].hero_img}.webp`)"  > 
     </div>
-    <div class="img-container modal">
-      <img
-        ref="phone"
-        class="phone"
-        src="../assets/12345667.jpg"
-        alt="isometric phone"
-        width="600"
-      />
-    </div>
-  </div>
+    <BackgroundImg/>
+  
   </div>
 </template>
 
 <script>
 import "../assets/styles/MainSection.css";
 import "../assets/styles/HeroSection.css";
-import { VueAgile } from 'vue-agile'
+import BackgroundImg from "../components/Background.vue"
+// import { VueAgile } from 'vue-agile'
 export default {
   components: {
-  agile: VueAgile 
+  // agile: VueAgile 
+  BackgroundImg
   },
 
   name: "MainSection",

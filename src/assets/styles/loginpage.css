@@ -1,0 +1,6 @@
+.login{
+    display: flex;
+}
+.login div img{
+  width: 23%;
+}

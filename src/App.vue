@@ -31,6 +31,8 @@ export default {
 
 <style>
 body{
+/* max-width: 1600px; */
+  /* padding: 23px; */
   margin: 0px auto;
 }
 </style>

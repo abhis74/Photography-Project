@@ -1,12 +1,69 @@
+body{
+  background-color: #b0816d;
+  
+}
+.heading{
+  width: 50%;
+  z-index: 1;
+  margin-top: 37px;
+  margin-left: 82px;
+  position: absolute;
+
+}
+.heading h1{
+  font-size: 77px;
+  color: #4daaa4;
+  transform: translate(0%, 0%);
+}
+.heading p{
+  width: 43%;
+  color: white;
+}
 .mainImg{
-    width: 100%;
+  width: 50%;
+  background: #ffffff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14vh;
+  transform: rotate(19deg);
+  margin-left: 25vw;
 
 
 }
+ .hero-section{
+  width: 50%;
+  background: #ffffff00;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 27vh !important;
+  /* transform: rotate(346deg); */
+  margin-left: 45vw;
+
+
+}
+.hero-section p{
+  color: white;
+  width: 35%;
+  top: 36px;
+  position: relative;
+  left: -178px;
+  z-index: 1;
+}
 .mainImg img{
-    width: 100%;
- 
-   
+  padding: 23px;
+    background:white;
+    width: 88%;
+    
+    
+  }
+  .hero-section img{
+    padding: 23px;
+    background: white;
+    width: 84%;
+    transform: rotate(344deg);
 }
 .agile__nav-button {
     background: transparent;
@@ -64,4 +121,14 @@
        object-fit: cover;
     width: 100%;
   }
-  
+  .arrow{
+    margin-top: 42px;
+    float: right;
+  }
+  .hero-img img{
+    width: 100%;
+  }
+  .hero-img {
+    /* background-image: url("../6.webp"); */
+
+  }
